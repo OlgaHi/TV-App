@@ -1,4 +1,5 @@
 # TVApp
+![TvShow](https://user-images.githubusercontent.com/46238682/54649670-5f73f580-4a68-11e9-95b7-ada4c923cfa3.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
