@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TvShowSearchComponent } from './tv-show-search.component';
+import { CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 describe('TvShowSearchComponent', () => {
   let component: TvShowSearchComponent;
@@ -8,7 +11,9 @@ describe('TvShowSearchComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TvShowSearchComponent ]
+      imports: [HttpClientModule, ReactiveFormsModule, FormsModule],
+      declarations: [ TvShowSearchComponent ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
